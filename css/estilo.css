@@ -58,15 +58,45 @@ footer{grid-area: footer;}
 /* Propiedades generales */
 
 .bgColor{
-    background-color: rgba(104, 94, 4, 0.801);
+    background-image: linear-gradient(to left,rgba(87, 4, 4, 0.849),white);
+}
+/* ANIMACIONES TRANSICIONES */
+a>img{
+    transition: all 1s;
 }
 
+input{
+    transition: font-size 1s;
+}
+
+input:focus{
+font-size: 20px;
+}
+a>img:hover{
+    transform:translateY(-10px);
+}
 a{
 text-decoration-line: none;
 color: black;
 font-size: 24px;
+transition: font-size 1s;
+}
+a:hover{
+    font-size: 27px;
 }
 
+
+/* @keyframes iconoSaltarin{
+    10%{width: 1000;}
+}
+.iconooSaltarin{
+    animation-name: iconoSaltarin;
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
+    animation-delay: 2s;
+} */
+
+/* -------- */
 ul{
     list-style-type: none;
 }
@@ -456,20 +486,22 @@ h3{
 
     /* media queriee */
     @media only screen and (max-width: 768px){
-        .gridMainF{
+        .gridMainf{
             display: grid;
             grid-template-columns: 100%;
             grid-template-rows: auto auto;
-            grid-template-areas: 
+            grid-template-areas:
             "parteA"
-            "parteB";
+            "parte B";
         }
-    }
-    .parteA{
-        display: flex;
-        flex-direction: column;
-    }
-    .parteB{
-        display: flex;
-        flex-direction: column;
+        .parteA{
+            grid-area:parteA;}
+        .parteB{grid-area: parteB;}
+
+        .parteA,.parteB{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            justify-items: center;
+        }
     }

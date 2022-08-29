@@ -4,19 +4,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/estilo.css">
     <title>Noticias</title>
 </head>
 <body>
     <div class="gridCointainer">
     <header class="bgColor header1">
-        <div>
+        <div data-aos="fade-up">
             <a href="#">
                 <img src="../assets/img/logo.png" alt="logo"> 
             </a>       
         </div>
         <nav>
-            <ul>
+            <ul data-aos="fade-left">
                 <li><a href="../index.html">Inicio</a></li>
                 <li><a href="#">Noticias</a></li>
                 <li><a href="resumenes.html">Resumenes</a></li>
@@ -27,22 +28,22 @@
     </header>
     <main>
         <section class="noticias">
-            <article class="principal">
+            <article class="principal" data-aos="flip-down">
                 <h1 class="titNot"> Argentina fue el país que mas entradas solicito</h1>
                 <img src="../assets/img/hinchada.jpg" alt="argentina">
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut praesentium dolor illo nemo debitis deserunt nostrum saepe, iste tenetur earum.</p>
             </article>
-            <article class="sec1">
+            <article class="sec1" data-aos="flip-down">
                 <h2 class="subt">Chile mirara el mundial por tv</h2>
                 <img  src="../assets/img/lloriqueo.jpg" alt="shile">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, quae.</p>
             </article>
-            <article class="sec2">
+            <article class="sec2" data-aos="flip-down">
                 <h2 class="subt">Mbappe se comio la peli </h2>
                 <img  class="donatt"  src="../assets/img/donatello.jpg" alt="donatello">
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste, optio.</p>
             </article>
-            <aside class="costado">
+            <aside class="costado" data-aos="flip-down">
                 <h3>Vuelos baratos a Qatar</h3>
                 <img src="../assets/img/avion.jpg" alt="avion">
                 <p class="pAside">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo quam accusantium ratione illo ex quae, laborum sequi adipisci reprehenderit incidunt dolore id? Ea a impedit, animi quis minima excepturi iusto deleniti neque rerum consequuntur soluta blanditiis ipsa commodi cupiditate dolorum?</p>
@@ -76,9 +77,8 @@
         </div>
     </footer>
 
-
-
-
-
-
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>

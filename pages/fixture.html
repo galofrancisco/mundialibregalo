@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/estilo.css">
     <title>fixture</title>
 
@@ -12,60 +13,57 @@
 <body>
     <div class="gridCointainer">
         <header class="bgColor header1">
-            <div>
+            <div data-aos="fade-up">
                 <a href="#">
                     <img src="../assets/img/logo.png" alt="logo"> 
                 </a>       
             </div>
             <nav>
-                <ul>
+                <ul data-aos="fade-up">
                     <li><a href="../index.html">Inicio</a></li>
-                    <li><a href="pages/noticias.html">Noticias</a></li>
-                    <li><a href="pages/resumenes">Resumenes</a></li>
+                    <li><a href="noticias.html">Noticias</a></li>
+                    <li><a href="resumenes.html">Resumenes</a></li>
                     <li><a href="#">Fixture</a></li>
-                    <li><a href="pages/estadisticas.html">Estadisticas</a></li>
+                    <li><a href="estadisticas.html">Estadisticas</a></li>
                 </ul>
                 </nav>
             </div>
         </header>
         <main class="gridMainF">
-            <div class="parteA">
+            <div class="parteA" data-aos="fade-right">
                 <img src="../assets/img/grupob.png" alt="">
                 <img src="../assets/img/grupoc.png" alt="">
                 <img src="../assets/img/grupod.png" alt="">
                 <img src="../assets/img/grupoe.png" alt="">
             </div>
-            <div class="parteB">
+            <div class="parteB" data-aos="fade-left">
                 <img src="../assets/img/grupof.png" alt="">
                 <img src="../assets/img/grupog.png" alt="">
                 <img src="../assets/img/grupoh.png" alt="">
                 <img src="../assets/img/grupoi.png" alt="">
             </div>
         </main>
-</body>
+        <footer class="gridFooter bgColor">
 
+            <div class="footerV1 h3Footer">
+                <h3>Ingresa tu corrreo para recibir todas las noticias sobre el mundial</h3>
+            </div>
+            <div class="footerV2 formFooter">
+                <form>
+                    <label for="email">ingresa tu email</label>
+                    <input type="email" id="email" name="email">
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+            <div class="footerV3 imgFooter">
+                <img class= "imgFM" src="../assets/img/androidfooter.png" alt="Androind">
+                <img class= "imgFM" src="../assets/img/applefooter.png" alt="Apple">
+            </div>
+        </footer>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    </body>
+</html>
 
-
-
-
-
-
-
-
-<footer class="gridFooter bgColor">
-
-    <div class="footerV1 h3Footer">
-        <h3>Ingresa tu corrreo para recibir todas las noticias sobre el mundial</h3>
-    </div>
-    <div class="footerV2 formFooter">
-        <form>
-            <label for="email">ingresa tu email</label>
-            <input type="email" id="email" name="email">
-            <input type="submit" value="Submit">
-        </form>
-    </div>
-    <div class="footerV3 imgFooter">
-        <img class= "imgFM" src="../assets/img/androidfooter.png" alt="Androind">
-        <img class= "imgFM" src="../assets/img/applefooter.png" alt="Apple">
-    </div>
-</footer>

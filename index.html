@@ -4,19 +4,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="css/estilo.css">
     <title>Inicio-Qatar2022</title>
 </head>
 <body>
     <div class="gridCointainer">
         <header class="bgColor header1">
-            <div>
+            <div data-aos="fade-up">
                 <a href="#">
-                    <img src="assets/img/logo.png" alt="logo"> 
+                    <img src="assets/img/logo.png" alt="logo" class="iconooSaltarin"> 
                 </a>       
             </div>
             <nav>
-                <ul>
+                <ul data-aos="fade-left">
                     <li><a href="#">Inicio</a></li>
                     <li><a href="pages/noticias.html">Noticias</a></li>
                     <li><a href="pages/resumenes.html">Resumenes</a></li>
@@ -30,10 +31,10 @@
             <div class="mainI1">
                 <h1 class="h1Mob">¡Estamos a 3 meses del mundial!</h1>
             </div>
-            <div class="mainI2 vidMain ">
+            <div class="mainI2 vidMain" data-aos="fade-left">
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/xgx5tFxn6Lo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
-            <div class="mainI3">
+            <div class="mainI3" data-aos="fade-left">
                 <p class="mainText">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo nostrum est maxime quo recusandae culpa illum neque dignissimos totam! Doloremque et ipsum deserunt aspernatur ea repellendus officia eaque minima quisquam. Officiis praesentium vitae, soluta perferendis voluptatum iste labore dolor blanditiis consequatur velit non, aliquam facilis magnam reiciendis. Adipisci, natus consequatur.</p>
             
             </div>
@@ -57,6 +58,9 @@
             </div>
         </footer>
     </div>
-    
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html
